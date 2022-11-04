@@ -37,10 +37,10 @@
   width: 6rem;
   height: 2rem;
 }
-.i-icons {
-  margin-top: 3rem;
+.i-iconss {
   display: flex;
-  gap: 0rem;
+  size: 60%;
+  gap: 2rem;
 }
 .i-icons > * {
   transform: scale(0.5);

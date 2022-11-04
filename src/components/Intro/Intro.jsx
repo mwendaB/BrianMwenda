@@ -7,9 +7,9 @@ import glassesimoji from "../../img/glassesimoji.png";
 import thumbup from "../../img/thumbup.png";
 import crown from "../../img/crown.png";
 import FloatinDiv from "../FloatingDiv/FloatingDiv";
-import Github from "../../img/github.png";
-import LinkedIn from "../../img/linkedin.png";
-import Instagram from "../../img/instagram.png";
+import {BsLinkedin} from 'react-icons/bs';
+import {FaGithub} from 'react-icons/fa';
+import {BsInstagram} from 'react-icons/bs';
 import { themeContext } from "../../Context";
 import { motion } from "framer-motion";
 import { Link } from "react-scroll";
@@ -27,10 +27,10 @@ const Intro = () => {
       <div className="i-left">
         <div className="i-name">
           {/* yahan change hy darkmode ka */}
-          <span style={{ color: darkMode ? "white" : "" }}>Hy! I Am</span>
+          <span style={{ color: darkMode ? "white" : "" }}>Hello! I Am</span>
           <span>Brian Mwenda</span>
           <span>
-            Frontend Developer with high level of experience in web designing
+            Full-Stack Developer with high level of experience in web designing
             and development, producting the Quality work
           </span>
         </div>
@@ -38,10 +38,10 @@ const Intro = () => {
           <button className="button i-button">Hire me</button>
         </Link>
         {/* social icons */}
-        <div className="i-icons">
-          <img src={Github} alt="" />
-          <img src={LinkedIn} alt="" />
-          <img src={Instagram} alt="" />
+        <div className="i-iconss">
+        <a href="https://www.linkedin.com/in/brian-mwenda-73a926228/"><BsLinkedin/></a>
+         <a href="https://github.com/mwendaB" size={"3rem"}> <FaGithub/></a>
+         <a href="https://www.instagram.com/its_mwend_a/"> <BsInstagram/></a>
         </div>
       </div>
       {/* right image side */}

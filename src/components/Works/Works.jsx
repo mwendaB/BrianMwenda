@@ -66,7 +66,7 @@ const Works = () => {
             <img src={Shopify} alt="" />
           </div>
           <div className="w-secCircle">
-            <img src={Facebook} alt="" />
+            <img src={Facebook} alt=""  />
           </div>
         </motion.div>
         {/* background Circles */}
