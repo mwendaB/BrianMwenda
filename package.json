@@ -10,8 +10,10 @@
     "@testing-library/user-event": "^13.5.0",
     "framer-motion": "^7.6.4",
     "react": "^18.2.0",
+    "react-bootstrap": "^2.5.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.6.0",
+    "react-on-screen": "^2.1.1",
     "react-scripts": "5.0.1",
     "react-scroll": "^1.8.8",
     "swiper": "^8.4.4",
@@ -38,7 +40,6 @@
     "development": [
       "last 1 chrome version",
       "last 1 firefox version",
-      "last 1 brave version",
       "last 1 safari version"
     ]
   }
