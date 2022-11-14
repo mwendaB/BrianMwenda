@@ -26,11 +26,19 @@ const Services = () => {
         {/* dark mode */}
         <span style={{ color: darkMode ? "white" : "" }}>My Awesome</span>
         <span>services</span>
-        <spane>
-          Lorem ispum is simpley dummy text of printing of printing Lorem
-          <br />
-          ispum is simpley dummy text of printing
-        </spane>
+        <span style={{color: darkMode ? "white" : ""  }}>
+        Experienced Full Stack Developer with a demonstrated history of working in the 
+        <br />
+        internet industry.
+      
+         Building Web applications with Angular, PHP, Laravel, Python, Django, 
+         <br />
+         Flask, 
+         
+         MySQL/Postgres and some other cool libraries and frameworks.
+
+
+        </span>
         <a href={Resume} download>
           <button className="button s-button">Download CV</button>
         </a>

@@ -24,6 +24,7 @@ const Portfolio = () => {
         className="portfolio-slider"
       >
         <SwiperSlide>
+          
           <img src={Sidebar} alt="" />
         </SwiperSlide>
         <SwiperSlide>
