@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import "./Works.css";
 import Upwork from "../../img/Upwork.png";
 import Fiverr from "../../img/fiverr.png";
+import Codekazi from "../../img/codekazi.png"
 import Amazon from "../../img/amazon.png";
 import Shopify from "../../img/Shopify.png";
 import Facebook from "../../img/Facebook.png";
@@ -57,16 +58,19 @@ const Works = () => {
             <img src={Upwork} alt="" />
           </div>
           <div className="w-secCircle">
-            <img src={Fiverr} alt="" />
+           
           </div>
           <div className="w-secCircle">
-            <img src={Amazon} alt="" />
+            {/* <img src={Amazon} alt="" /> */}
+            <img src={Codekazi} alt="" />
           </div>{" "}
           <div className="w-secCircle">
-            <img src={Shopify} alt="" />
+            {/* <img src={Shopify} alt="" /> */}
+            
           </div>
           <div className="w-secCircle">
-            <img src={Facebook} alt=""  />
+            {/* <img src={Facebook} alt=""  /> */}
+            <img src={Fiverr} alt="" />
           </div>
         </motion.div>
         {/* background Circles */}
