@@ -4,6 +4,7 @@ import "./About.scss";
 import { motion } from 'framer-motion';
 import { bios } from '../../../Data';
 import portfolio from "../../../assets/portfolio.jpg"
+import RESUM from './RESUM.pdf'
 const About = () => {
 
 
@@ -43,11 +44,14 @@ const About = () => {
               </div>
             )
           })}
-          <motion.a href='#' download=""
+         <motion.a href={RESUM} download
             whileHover={{ scale: 1.1 }}
             transition={{ duration: 0.3 }}
           >
             Download Resume
+      
+                  
+         
           </motion.a>
         </motion.div>
 
