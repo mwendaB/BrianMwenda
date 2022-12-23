@@ -8,6 +8,7 @@ import emailjs from '@emailjs/browser';
 import { motion } from 'framer-motion';
 
 const Contact = () => {
+
   const form = useRef();
   const [done, setDone] = useState(false)
   const sendEmail = (e) => {
@@ -82,22 +83,23 @@ const Contact = () => {
      
 
           <div className="row">
-            <textarea placeholder='message'></textarea>
+            <textarea name="message" className="user" placeholder="Message"></textarea>
           </div>
+
+          <motion.input 
+           whileHover={{ scale: 1.1 }}
+           transition={{duration: 0.3}}
+           className="btn"
+           type= "submit"
+          />
+          <br />
+           <span className='POP'>{done && "Thanks for Contacting me, I`ll get back to you soon"}</span>
+
+         
           </form>
           
   
-          <motion.button
-            whileHover={{ scale: 1.1 }}
-            transition={{duration: 0.3}}
-            className="btn"
-          
-          >
-            <div  className='board'  type='submit'>Send</div>
-            <span>{done && "Thanks for Contacting me"}</span>
-          
 
-          </motion.button>
         </motion.div>
       </div>
     </div>
