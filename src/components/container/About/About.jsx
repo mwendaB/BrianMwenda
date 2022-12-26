@@ -35,7 +35,8 @@ const About = () => {
           transition={{ duration: 1 }}
         >
 
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae at rem, tenetur ad ipsa sequi, optio eius laudantium vero minus maxime laborum est et nemo consequatur nostrum distinctio sed, nulla doloribus officiis ea eligendi explicabo.</p>
+          <p>I`m a software developer with the skills to make payment integrations (eg:darajaAPI,Stripe,Authorize) and many others.
+             I do both Back-end/Front-end development and also most of all develop highly secure, fast and scalable Restful API for your application. </p>
           {bios.map(bio => {
             return (
               <div className="bio" key={bio.id}>

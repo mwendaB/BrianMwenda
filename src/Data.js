@@ -102,7 +102,7 @@ export const workImages = [
     id: 3,
     img: work3,
     name: "project 3",
-    category: "web"
+    category: "web",
   },
   {
     id: 4,
