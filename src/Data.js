@@ -90,7 +90,8 @@ export const workImages = [
     id: 1,
     img: work1,
     name: "project 1",
-    category: "web"
+    category: "web",
+    a: "https:brian"
   },
   {
     id: 2,
