@@ -57,7 +57,7 @@ const Home = () => {
         <div
           className="freelance"
         >
-          Freelancer
+          IT support/Consultant
         </div>
       </div>
     </motion.div>
