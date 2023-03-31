@@ -45,7 +45,7 @@ export const icons = [<FaHtml5 />, <DiDjango/>, <DiJavascript />, <SiTypescript 
 export const experiences = [
   {
     id: 1,
-    year: "2022",
+    year: "2022-2023",
     position: "Middle Software Developer",
     company: "codekazi.com"
     
@@ -58,7 +58,7 @@ export const experiences = [
   },
   {
     id: 3,
-    year: "2022",
+    year: "2021-2023",
     position: "Freelance Web Dveloper",
     company: "#"
   }
