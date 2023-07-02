@@ -86,7 +86,7 @@ export const experiences = [
   {
     id: 3,
     year: "2021-2023",
-    position: "Freelance Web Dveloper",
+    position: "Freelance Web Developer",
     company: "#",
   },
 ];
