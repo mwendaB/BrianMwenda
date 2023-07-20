@@ -29,7 +29,7 @@
         margin-top: 5rem;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        gap: 6rem;
+        gap: 1rem;
       
         @media screen and (max-width: 800px) {
           grid-template-columns: repeat(2, 1fr);
