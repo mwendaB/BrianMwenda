@@ -112,45 +112,59 @@ export const finishes = [
     itemName: "Clients Served",
   },
 ];
+// Data.js
+
 export const workImages = [
   {
     id: 1,
     img: work1,
     name: "project 1",
     category: "web",
-    a: "https:brian",
+    description: "This is a description for project 1. It showcases the use of React and Node.js.",
+    link: "https://example.com/project-1",
   },
   {
     id: 2,
     img: work2,
     name: "project 2",
     category: "web",
+    description: "This is a description for project 2. It uses HTML, CSS, and JavaScript.",
+    link: "https://example.com/project-2",
   },
   {
     id: 3,
     img: work3,
     name: "project 3",
     category: "web",
+    description: "This is a description for project 3. It demonstrates the use of Redux.",
+    link: "https://example.com/project-3",
   },
   {
     id: 4,
     img: work4,
     name: "project 4",
     category: "app",
+    description: "This is a description for project 4. It's a mobile application built with React Native.",
+    link: "https://example.com/project-4",
   },
   {
     id: 5,
     img: work5,
     name: "project 5",
     category: "app",
+    description: "This is a description for project 5. It's an iOS app written in Swift.",
+    link: "https://example.com/project-5",
   },
   {
     id: 6,
     img: work6,
     name: "project 6",
     category: "design",
+    description: "This is a description for project 6. It's a creative design using Adobe Illustrator.",
+    link: "https://example.com/project-6",
   },
 ];
+
 
 export const workNavs = ["All", "Web", "App", "Design"];
 
