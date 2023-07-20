@@ -114,6 +114,8 @@ export const finishes = [
 ];
 // Data.js
 
+// Data.js
+
 export const workImages = [
   {
     id: 1,
@@ -122,6 +124,7 @@ export const workImages = [
     category: "web",
     description: "This is a description for project 1. It showcases the use of React and Node.js.",
     link: "https://example.com/project-1",
+    tags: ["React", "Node.js", "Web Development"],
   },
   {
     id: 2,
@@ -130,6 +133,7 @@ export const workImages = [
     category: "web",
     description: "This is a description for project 2. It uses HTML, CSS, and JavaScript.",
     link: "https://example.com/project-2",
+    tags: ["HTML", "CSS", "JavaScript", "Web Development"],
   },
   {
     id: 3,
@@ -138,6 +142,7 @@ export const workImages = [
     category: "web",
     description: "This is a description for project 3. It demonstrates the use of Redux.",
     link: "https://example.com/project-3",
+    tags: ["React", "Redux", "Web Development"],
   },
   {
     id: 4,
@@ -146,6 +151,7 @@ export const workImages = [
     category: "app",
     description: "This is a description for project 4. It's a mobile application built with React Native.",
     link: "https://example.com/project-4",
+    tags: ["React Native", "Mobile App", "App Development"],
   },
   {
     id: 5,
@@ -154,6 +160,7 @@ export const workImages = [
     category: "app",
     description: "This is a description for project 5. It's an iOS app written in Swift.",
     link: "https://example.com/project-5",
+    tags: ["Swift", "iOS App", "App Development"],
   },
   {
     id: 6,
@@ -162,8 +169,10 @@ export const workImages = [
     category: "design",
     description: "This is a description for project 6. It's a creative design using Adobe Illustrator.",
     link: "https://example.com/project-6",
+    tags: ["Design", "Adobe Illustrator", "Graphic Design"],
   },
 ];
+
 
 
 export const workNavs = ["All", "Web", "App", "Design"];
