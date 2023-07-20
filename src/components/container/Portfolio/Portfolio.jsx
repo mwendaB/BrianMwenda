@@ -1,11 +1,8 @@
-// Portfolio.jsx
-
 import React, { useEffect, useState } from 'react';
-import "./Portfolio.scss";
-import { workNavs } from "../../../Data";
-import { workImages } from '../../../Data';
 import { FiGithub, FiEye } from "react-icons/fi";
 import { motion } from 'framer-motion';
+import { workNavs } from "../../../Data";
+import { workImages } from '../../../Data';
 
 const Portfolio = () => {
   const [tab, setTab] = useState({ name: "all" });
@@ -26,6 +23,11 @@ const Portfolio = () => {
   const activeTab = (e, index) => {
     setTab({ name: e.target.textContent.toLowerCase() });
     setActive(index);
+  };
+
+  const talkStyle = {
+    marginTop: "40px", // Add margin top to space the talk section from the images
+    // Add other styles for the talk section if needed
   };
 
   return (
@@ -106,6 +108,7 @@ const Portfolio = () => {
         whileInView={{ x: [250, 0], opacity: 1 }}
         transition={{ duration: 1 }}
         className="talk"
+        style={talkStyle}
       >
         <div className="talk_left">
           <h3>so let's talk about <br /> <span>your next projects</span></h3>
