@@ -59,38 +59,40 @@ const Portfolio = () => {
         exit={{opacity: 0, y: -50}}
         className="workImages"
       >
-        {works.map((work) => {
-          return (
-            <div className="workImage"
-             key={work.id}
-            >
-              <img src={work.img} alt="workImg" />
-              <motion.div
-                initial={{opacity: 0}}
-                whileHover={{ opacity: [0, 1] }}
-                transition={{duration: 0.3 , ease: "easeInOut"}}
-                className='hoverLayer'
-              >
-                  
-                <motion.a href='https://github.com/mwendaB'
-                whileInView={{scale: [0,1]}}
-                 whileHover={{scale: [1, 1.1]}}
-                 transition={{duration: 0.3}}
-                >
-                  <FiGithub />
-                </motion.a>
-                  
-                <motion.a href='https://github.com/mwendaB'
-                whileInView={{scale: [0,1]}}
-                 whileHover={{scale: [1, 1.1]}}
-                 transition={{duration: 0.3}}
-                >
-                  <FiEye />
-                </motion.a>
-              </motion.div>
-            </div>
-          )
-        })}
+       {works.map((work) => (
+  <div className="workImage" key={work.id}>
+    <img src={work.img} alt="workImg" />
+    <motion.div
+      initial={{ opacity: 0 }}
+      whileHover={{ opacity: [0, 1] }}
+      transition={{ duration: 0.3, ease: "easeInOut" }}
+      className="hoverLayer"
+    >
+      <motion.a
+        href={work.link} // Use the project link from the data
+        whileInView={{ scale: [0, 1] }}
+        whileHover={{ scale: [1, 1.1] }}
+        transition={{ duration: 0.3 }}
+      >
+        <FiGithub />
+      </motion.a>
+
+      <motion.a
+        href={work.link} // Use the project link from the data
+        whileInView={{ scale: [0, 1] }}
+        whileHover={{ scale: [1, 1.1] }}
+        transition={{ duration: 0.3 }}
+      >
+        <FiEye />
+      </motion.a>
+    </motion.div>
+    <div className="projectDescription">
+      <h3>{work.name}</h3>
+      <p>{work.description}</p> {/* Display the project description from the data */}
+    </div>
+  </div>
+))}
+
       </motion.div>
       <motion.div
         initial={{x: 0 ,opacity: 0}}
