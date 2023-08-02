@@ -1,35 +1,84 @@
-import React, { useEffect, useState } from 'react';
-import "./Portfolio.scss"
-import { workNavs } from "../../../Data";
-import { workImages } from '../../../Data';
-import {FiGithub, FiEye} from "react-icons/fi"
-import { motion } from 'framer-motion';
+import React, { useState, useEffect } from "react";
+import "./Portfolio.scss";
+import { workImages, workNavs } from "../../../Data";
+import { motion } from "framer-motion";
+import { Tilt } from "react-tilt";
+import {FiGithub} from "react-icons/fi"
+
+const slideInFadeIn = ({ delay, duration }) => ({
+  hidden: { opacity: 0, x: -50 },
+  visible: {
+    opacity: 1,
+    x: 0,
+    transition: {
+      delay,
+      duration,
+    },
+  },
+});
+
+const ProjectCard = ({ index, img, name, description, tags, link }) => {
+  return (
+    <motion.div variants={slideInFadeIn(index * 0.2, 0.5)}>
+      <Tilt
+        options={{
+          max: 45,
+          scale: 1,
+          speed: 450,
+        }}
+        className="portfolio-card"
+      >
+        <div className="project-image">
+          <img src={img} alt="project_image" />
+          <div className="github-icon-container">
+            <div onClick={() => window.open(link, "_blank")} className="black-gradient">
+              <FiGithub size={20} color="#fff" />
+            </div>
+          </div>
+        </div>
+        <div className="project-details">
+          <h3>{name}</h3>
+          <p className="project-description">{description}</p>
+        </div>
+        <div className="project-tags">
+          {tags.map((tag) => (
+            <p key={`${name}-${tag}`} className="project-tag">
+              #{tag}
+            </p>
+          ))}
+        </div>
+      </Tilt>
+    </motion.div>
+  );
+};
 
 const Portfolio = () => {
   const [tab, setTab] = useState({ name: "all" });
-  const [works,setWorks] = useState([])
+  const [works, setWorks] = useState([]);
   const [active, setActive] = useState(0);
 
   useEffect(() => {
-    if (tab.name === "all") {
-      setWorks(workImages)
-    } else {
-      const newWork = workImages.filter(workImage => {
-        return workImage.category.toLowerCase() === tab.name;
+    const filteredProjects = tab.name === "all" ? workImages : workImages.filter(
+      workImage => workImage.category.toLowerCase() === tab.name
+    );
+    setWorks(filteredProjects);
+  }, [tab]);
 
-      })
-      setWorks(newWork)
-    }
-  }, [tab])
+  const activeTab = (e) => {
+    console.log("Button clicked:", e.target.textContent);
+    const selectedTabName = e.target.textContent.toLowerCase();
+    console.log("Selected tab name:", selectedTabName);
+    setTab({ name: selectedTabName });
+    setActive(e.target.id);
+    console.log("Tab:", tab);
+    console.log("Active:", active);
+  };
   
-  const activeTab = (e,index) => {
-    setTab({ name: e.target.textContent.toLowerCase() });
-    setActive(index)
-  }
+  
 
   return (
     <div className="container" id="portfolio">
-      <motion.div
+       <motion.div
         initial={{opacity: 0}}
         whileInView={{y: [-50, 0], opacity: 1}}
         className="title"
@@ -39,83 +88,28 @@ const Portfolio = () => {
             <h1>Awesome Projects</h1>
       </motion.div>
       <motion.div
-        initial={{opacity: 0}}
-        whileInView={{y: [-50, 0], opacity: 1}}
+        initial={{ opacity: 0 }}
+        whileInView={{ y: [-50, 0], opacity: 1 }}
         className="buttons"
       >
-        {workNavs.map((workNav ,index) => {
-          return (
-            <button
-              onClick={(e) => activeTab(e, index)}
-              className={`${active === index ? "active" : ""}`}
-              key={index}>{workNav}</button>
-          )
-        })}
+        {workNavs.map((workNav, index) => (
+           <button
+           onClick={(e) => activeTab(e, index)}
+           className={`${active === index ? "active" : ""}`}
+           key={index}
+           
+           >
+           
+            {workNav}</button>
+        ))}
       </motion.div>
-      <motion.div
-        initial={{x: 0 ,opacity: 0}}
-          whileInView={{ x: [-250,0], opacity: 1 }}
-        transition={{ duration: 1 }}
-        exit={{opacity: 0, y: -50}}
-        className="workImages"
-      >
-       {works.map((work) => (
-  <div className="workImage" key={work.id}>
-    <img src={work.img} alt="workImg" />
-    <motion.div
-      initial={{ opacity: 0 }}
-      whileHover={{ opacity: [0, 1] }}
-      transition={{ duration: 0.3, ease: "easeInOut" }}
-      className="hoverLayer"
-    >
-      <motion.a
-        href={work.link} // Use the project link from the data
-        whileInView={{ scale: [0, 1] }}
-        whileHover={{ scale: [1, 1.1] }}
-        transition={{ duration: 0.3 }}
-      >
-        <FiGithub />
-      </motion.a>
-
-      <motion.a
-        href={work.link} // Use the project link from the data
-        whileInView={{ scale: [0, 1] }}
-        whileHover={{ scale: [1, 1.1] }}
-        transition={{ duration: 0.3 }}
-      >
-        <FiEye />
-      </motion.a>
-    </motion.div>
-    <div className="projectDescription">
-      <h3>{work.name}</h3>
-      <p>{work.description}</p> {/* Display the project description from the data */}
+      <div className="portfolio-container">
+        {works.map((project, index) => (
+          <ProjectCard key={project.id} index={index} {...project} />
+        ))}
+      </div>
     </div>
-  </div>
-))}
+  );
+};
 
-      </motion.div>
-      <motion.div
-        initial={{x: 0 ,opacity: 0}}
-          whileInView={{ x: [250,0], opacity: 1 }}
-          transition={{duration: 1}}
-        className="talk"
-      >
-        <div className="talk_left">
-          <h3>so let's talk about <br /> <span>your next projects</span></h3>
-        </div>
-        <motion.div
-          whileHover={{ scale: 1.1 }}
-          transition={{duration: 0.3}}
-          className="talk_right">
-          <a href="#contact"
-          >
-            Contact Me
-          </a>
-        </motion.div>
-      </motion.div>
-      
-    </div>
-  )
-}
-
-export default Portfolio
+export default Portfolio;
