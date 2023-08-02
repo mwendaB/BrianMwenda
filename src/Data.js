@@ -64,32 +64,54 @@ export const icons = [
   <FaFigma />,
 ];
 
+// experiences.js
 export const experiences = [
   {
     id: 1,
-    year: "2023- present",
+    year: "2023 - present",
     position: "FullStack Developer",
     company: "exhibitsolutions",
-  },
-  {
-    id: 1,
-    year: "2022- present",
-    position: "FullStack Developer - parttime",
-    company: "codekazi.com",
+    tasks: [
+      "Developed and maintained web applications using React.js and Node.js.",
+      "Implemented RESTful APIs to interact with the backend.",
+      "Collaborated with the design team to improve UI/UX.",
+    ],
   },
   {
     id: 2,
-    year: "2022",
-    position: "Intern Web Developer",
-    company: "Italanta.co.ke",
+    year: "2022 - present",
+    position: "FullStack Developer - part-time",
+    company: "codekazi.com",
+    tasks: [
+      "Built and deployed responsive websites using HTML, CSS, and JavaScript.",
+      "Assisted in backend development with Express.js and MongoDB.",
+      "Provided technical support and bug fixes for existing projects.",
+    ],
   },
   {
     id: 3,
-    year: "2021-2023",
+    year: "2022",
+    position: "Intern Web Developer",
+    company: "Italanta.co.ke",
+    tasks: [
+      "Assisted senior developers in building web applications.",
+      "Gained experience in front-end technologies like React.js.",
+      "Contributed to team projects and attended code reviews.",
+    ],
+  },
+  {
+    id: 4,
+    year: "2021 - 2023",
     position: "Freelance Web Developer",
     company: "#",
+    tasks: [
+      "Worked with clients to understand project requirements.",
+      "Designed and developed custom websites according to client needs.",
+      "Ensured timely delivery and handled ongoing maintenance.",
+    ],
   },
 ];
+
 export const finishes = [
   {
     id: 1,
