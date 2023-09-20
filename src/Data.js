@@ -151,7 +151,7 @@ export const workImages = [
   {
     id: 2,
     img: work2,
-    name: "project 2",
+    name: "Nikestore",
     category: "web",
     description: "NikeStore is a React project where customers can add products to their cart, calculate the total price, and choose a payment method.",
     link: "https://nike-store-nine.vercel.app/",
@@ -169,7 +169,7 @@ export const workImages = [
   {
     id: 4,
     img: work4,
-    name: "project 4",
+    name: "Hotel Management system",
     category: "app",
     description: "This is a project 4. It's a mobile application built with React Native.",
     link: "https://example.com/project-4",
