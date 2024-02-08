@@ -68,7 +68,20 @@ export const icons = [
 export const experiences = [
   {
     id: 1,
-    year: "2023 - present",
+    year: "2024 - Present",
+    position: "Web Developer",
+    company: "Nathan & Nathan",
+    tasks: [
+      "Developed and maintained web applications using Nextjs,Reactjs and Nuxtjs",
+      "Work closely with the backend team To Implement high quality API which are dynamic.",
+      "Collaborate with the design team to give the clients Quality designs which are both interactive and dynamic",
+      "Worked closely with the QA team to identify and fix bugs early in the development process, resulting in a 98% defect-free release.",
+      "Collaborated with DevOps engineers to implement a CI/CD pipeline, reducing deployment time from days to hours."
+    ],
+  },
+  {
+    id: 2,
+    year: "2023 - Nov 2023",
     position: "FullStack Developer",
     company: "exhibitsolutions",
     tasks: [
@@ -78,7 +91,7 @@ export const experiences = [
     ],
   },
   {
-    id: 2,
+    id: 3,
     year: "2022 - present",
     position: "FullStack Developer - part-time",
     company: "codekazi.com",
@@ -89,7 +102,7 @@ export const experiences = [
     ],
   },
   {
-    id: 3,
+    id: 4,
     year: "2022",
     position: "Intern Web Developer",
     company: "Italanta.co.ke",
@@ -100,7 +113,7 @@ export const experiences = [
     ],
   },
   {
-    id: 4,
+    id: 5,
     year: "2021 - 2023",
     position: "Freelance Web Developer",
     company: "#",
@@ -115,12 +128,12 @@ export const experiences = [
 export const finishes = [
   {
     id: 1,
-    number: "2+",
+    number: "3.5+",
     itemName: "Years Of Experience",
   },
   {
     id: 2,
-    number: "3+",
+    number: "4+",
     itemName: "Companies Worked For",
   },
   {
@@ -130,13 +143,12 @@ export const finishes = [
   },
   {
     id: 4,
-    number: "7+",
+    number: "8+",
     itemName: "Clients Served",
   },
 ];
 // Data.js
 
-// Data.js
 
 export const workImages = [
   {
