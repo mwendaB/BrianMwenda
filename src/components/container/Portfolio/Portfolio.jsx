@@ -65,13 +65,12 @@ const Portfolio = () => {
   }, [tab]);
 
   const activeTab = (e, i) => {
-    console.log("Button clicked:", e.target.textContent);
     const selectedTabName = e.target.textContent.toLowerCase();
-    console.log("Selected tab name:", selectedTabName);
-    setTab({ name: selectedTabName });
+    setTab({ 
+      name: selectedTabName,
+      transition: { duration: 0.3, ease: "easeInOut" },
+  });
     setActive(i);
-    // console.log("Tab:", tab);
-    // console.log("Active:", active);
   };
   
   
