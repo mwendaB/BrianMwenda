@@ -64,14 +64,14 @@ const Portfolio = () => {
     setWorks(filteredProjects);
   }, [tab]);
 
-  const activeTab = (e) => {
+  const activeTab = (e, i) => {
     console.log("Button clicked:", e.target.textContent);
     const selectedTabName = e.target.textContent.toLowerCase();
     console.log("Selected tab name:", selectedTabName);
     setTab({ name: selectedTabName });
-    setActive(e.target.id);
-    console.log("Tab:", tab);
-    console.log("Active:", active);
+    setActive(i);
+    // console.log("Tab:", tab);
+    // console.log("Active:", active);
   };
   
   
