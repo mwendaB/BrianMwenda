@@ -52,12 +52,12 @@ const Home = () => {
         <div
           className="ui"
         >
-          UI/UX Designer
+          Backend Developer
         </div>
         <div
           className="freelance"
         >
-          IT support/Consultant
+          Consultant
         </div>
       </div>
     </motion.div>
