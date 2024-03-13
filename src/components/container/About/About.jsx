@@ -14,8 +14,6 @@ const About = () => {
 
     const globe = createGlobe(canvasRef.current, {
       devicePixelRatio: 2,
-      width: 300 ,
-      height: 150,
       phi: 0,
       theta: 0,
       dark: 1,
@@ -63,7 +61,7 @@ const About = () => {
           <canvas
           className="cobe"
             ref={canvasRef}
-  
+            style={{ height: '100%', width: '100%' }}
           />
           {/* <motion.img
             src={portfolio}
