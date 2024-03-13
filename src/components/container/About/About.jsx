@@ -14,6 +14,8 @@ const About = () => {
 
     const globe = createGlobe(canvasRef.current, {
       devicePixelRatio: 2,
+      width: 300 ,
+      height: 150,
       phi: 0,
       theta: 0,
       dark: 1,
