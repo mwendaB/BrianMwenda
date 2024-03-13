@@ -61,12 +61,9 @@ const About = () => {
           className=""
         >
           <canvas
+          className="cobe"
             ref={canvasRef}
-            style={{
-              maxWidth: "100%",
-
-              aspectRatio: 1,
-            }}
+  
           />
           {/* <motion.img
             src={portfolio}
