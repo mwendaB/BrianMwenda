@@ -8,12 +8,15 @@ import createGlobe from "cobe";
 
 const About = () => {
   const canvasRef = useRef();
+  const mobileCanvasRef = useRef();
 
   useEffect(() => {
     let phi = 0;
 
     const globe = createGlobe(canvasRef.current, {
       devicePixelRatio: 2,
+      width: 500 * 2,
+      height: 500 * 2,
       phi: 0,
       theta: 0,
       dark: 1,
@@ -22,17 +25,52 @@ const About = () => {
       mapBrightness: 6,
       baseColor: [0.3, 0.3, 0.3],
       markerColor: [0.1, 0.8, 1],
-      glowColor: [140 / 255, 18 / 255, 240 / 255],
+      glowColor: [1, 1, 1],
       markers: [
         // longitude latitude
-        { location: [-1.3032036, 36.6825841], size: 0.05 },
+        { location: [37.7595, -122.4367], size: 0.03 },
+        { location: [40.7128, -74.006], size: 0.1 }
       ],
       onRender: (state) => {
         // Called on every animation frame.
         // `state` will be an empty object, return updated params.
         state.phi = phi;
         phi += 0.01;
-      },
+      }
+    });
+
+    return () => {
+      globe.destroy();
+    };
+  }, []);
+
+  useEffect(() => {
+    let phi = 0;
+
+    const globe = createGlobe(mobileCanvasRef.current, {
+      devicePixelRatio: 2,
+      width: 250 * 2,
+      height: 250 * 2,
+      phi: 0,
+      theta: 0,
+      dark: 1,
+      diffuse: 1.2,
+      mapSamples: 16000,
+      mapBrightness: 6,
+      baseColor: [0.3, 0.3, 0.3],
+      markerColor: [0.1, 0.8, 1],
+      glowColor: [1, 1, 1],
+      markers: [
+        // longitude latitude
+        { location: [37.7595, -122.4367], size: 0.03 },
+        { location: [40.7128, -74.006], size: 0.1 }
+      ],
+      onRender: (state) => {
+        // Called on every animation frame.
+        // `state` will be an empty object, return updated params.
+        state.phi = phi;
+        phi += 0.01;
+      }
     });
 
     return () => {
@@ -56,13 +94,18 @@ const About = () => {
           initial={{ x: 0, opacity: 0 }}
           whileInView={{ x: [-250, 0], opacity: 1 }}
           transition={{ duration: 1 }}
-          className=""
         >
-          <canvas
-          className="cobe"
-            ref={canvasRef}
-            style={{ height: '100%', width: '100%' }}
-          />
+          <div className="hidden w-full place-items-center lg:grid">
+            <canvas
+              ref={canvasRef}
+              className="-mt-16"
+              style={{ width: 600, height: 600, maxWidth: "100%", aspectRatio: 1 }}
+            />
+          </div>
+          <div className="grid w-full place-items-center lg:hidden">
+            <canvas ref={mobileCanvasRef}
+              style={{ width: 250, height: 250, aspectRatio: 1 }} />
+          </div>
           {/* <motion.img
             src={portfolio}
             whileHover={{ y: -48, x: -55 }}
