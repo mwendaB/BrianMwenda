@@ -104,7 +104,7 @@ export const experiences = [
   {
     id: 4,
     year: "2022",
-    position: "Intern Web Developer",
+    position: "Intern Software Developer",
     company: "Italanta.co.ke",
     tasks: [
       "Assisted senior developers in building web applications.",
