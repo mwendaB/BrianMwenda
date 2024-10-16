@@ -45,7 +45,6 @@ const Home = () => {
           connect with me</motion.a>
         <div
           className="web"
-
         >Frontend Developer
         </div>
         <div
