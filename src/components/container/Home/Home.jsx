@@ -46,9 +46,7 @@ const Home = () => {
         <div
           className="web"
 
-        >
-          
- Frontend Developer
+        >Frontend Developer
         </div>
         <div
           className="ui"
