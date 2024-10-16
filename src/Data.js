@@ -68,8 +68,8 @@ export const icons = [
 export const experiences = [
   {
     id: 1,
-    year: "2024 - Present",
-    position: "Web Developer",
+    year: "Jan 2024 - Present",
+    position: "Senior Frontend Developer",
     company: "Nathan & Nathan",
     tasks: [
       "Developed and maintained web applications using Nextjs,Reactjs and Nuxtjs",
