@@ -119,10 +119,7 @@ const About = () => {
           transition={{ duration: 1 }}
         >
           <p>
-            I`m a software developer with the skills to make payment
-            integrations (eg:darajaAPI,Stripe,Authorize) and many others. I do
-            both Back-end/Front-end development and also most of all develop
-            highly secure, fast and scalable Restful API for your application.{" "}
+            Highly motivated Full-Stack Developer with 4+ years of experience building scalable, user-centric web applications. Proficient in modern technologies like Nextjs, Nuxtjs, React, Node.js, and Python, with a proven track record of delivering projects that improve efficiency and user satisfaction. Passionate about solving complex problems and creating innovative solutions that drive business growth. Successfully deployed 10+ products, optimized website performance by 30%, and integrated third-party APIs to enhance functionality.
           </p>
           {bios.map((bio) => {
             return (
