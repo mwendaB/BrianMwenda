@@ -1,31 +1,14 @@
 import React, { useState, useEffect } from "react";
 import "./Portfolio.scss";
 import { workImages, workNavs } from "../../../Data";
-import { motion } from "framer-motion";
-import { Tilt } from "react-tilt";
-import {FiGithub} from "react-icons/fi"
 
-const slideInFadeIn = ({ delay, duration }) => ({
-  hidden: { opacity: 0, x: -50 },
-  visible: {
-    opacity: 1,
-    x: 0,
-    transition: {
-      delay,
-      duration,
-    },
-  },
-});
+import { FiGithub } from "react-icons/fi";
 
-const ProjectCard = ({ index, img, name, description, tags, link }) => {
+const ProjectCard = ({ img, name, description, tags, link }) => {
   return (
-    <motion.div variants={slideInFadeIn(index * 0.2, 0.5)}>
-      <Tilt
-        options={{
-          max: 45,
-          scale: 1,
-          speed: 450,
-        }}
+    <div className="portfolio-card-wrapper">
+      <div
+      
         className="portfolio-card"
       >
         <div className="project-image">
@@ -47,8 +30,8 @@ const ProjectCard = ({ index, img, name, description, tags, link }) => {
             </p>
           ))}
         </div>
-      </Tilt>
-    </motion.div>
+      </div>
+    </div>
   );
 };
 
@@ -58,53 +41,38 @@ const Portfolio = () => {
   const [active, setActive] = useState(0);
 
   useEffect(() => {
-    const filteredProjects = tab.name === "all" ? workImages : workImages.filter(
-      workImage => workImage.category.toLowerCase() === tab.name
-    );
+    const filteredProjects = tab.name === "all" 
+      ? workImages 
+      : workImages.filter(workImage => workImage.category.toLowerCase() === tab.name);
     setWorks(filteredProjects);
   }, [tab]);
 
   const activeTab = (e, i) => {
     const selectedTabName = e.target.textContent.toLowerCase();
-    setTab({ 
-      name: selectedTabName,
-      transition: { duration: 0.3, ease: "easeInOut" },
-  });
+    setTab({ name: selectedTabName });
     setActive(i);
   };
-  
-  
 
   return (
     <div className="container" id="portfolio">
-       <motion.div
-        initial={{opacity: 0}}
-        whileInView={{y: [-50, 0], opacity: 1}}
-        className="title"
-      
-      >
-            <span>My Work</span>
-            <h1>Awesome Projects</h1>
-      </motion.div>
-      <motion.div
-        initial={{ opacity: 0 }}
-        whileInView={{ y: [-50, 0], opacity: 1 }}
-        className="buttons"
-      >
+      <div className="title">
+        <span>My Work</span>
+        <h1>Awesome Projects</h1>
+      </div>
+      <div className="buttons">
         {workNavs.map((workNav, index) => (
-           <button
-           onClick={(e) => activeTab(e, index)}
-           className={`${active === index ? "active" : ""}`}
-           key={index}
-           
-           >
-           
-            {workNav}</button>
+          <button
+            onClick={(e) => activeTab(e, index)}
+            className={`${active === index ? "active" : ""}`}
+            key={index}
+          >
+            {workNav}
+          </button>
         ))}
-      </motion.div>
+      </div>
       <div className="portfolio-container">
-        {works.map((project, index) => (
-          <ProjectCard key={project.id} index={index} {...project} />
+        {works.map((project) => (
+          <ProjectCard key={project.id} {...project} />
         ))}
       </div>
     </div>
