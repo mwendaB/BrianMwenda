@@ -77,11 +77,15 @@
 }
 
 // Portfolio Card Styles
+<<<<<<< HEAD
 <<<<<<< HEAD:components/container/Portfolio/Portfolio.scss
+=======
+>>>>>>> 63191f6 (make new changes for the sites)
 .portfolio-card-wrapper {
   height: 100%;
 }
 
+<<<<<<< HEAD
 .portfolio-card {
   height: 100%;
   display: flex;
@@ -90,6 +94,12 @@
 .portfolio-card {
   width: 400px;
 >>>>>>> d46f38e (change the files for the secctiopn):src/components/container/Portfolio/Portfolio.scss
+=======
+.portfolio-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+>>>>>>> 63191f6 (make new changes for the sites)
   background-color: #131212;
   color: white;
   padding: 15px;
@@ -100,14 +110,6 @@
   &:hover {
     box-shadow: 0 0 15px rgba(140, 18, 240, 0.2);
   }
-
-  @media (max-width: 767px) {
-    width: 100%;
-  }
-
-  @media (min-width: 768px) and (max-width: 1023px) {
-    width: 300px;
-  }
 }
 
 // Project Image Styles
@@ -117,6 +119,7 @@
   height: 230px; // Fixed height for images
   border-radius: 8px;
   overflow: hidden;
+  margin-bottom: 10px;
 
   img {
     width: 100%;
@@ -182,12 +185,17 @@
 .project-tags {
   display: flex;
   flex-wrap: wrap;
+<<<<<<< HEAD
 <<<<<<< HEAD:components/container/Portfolio/Portfolio.scss
   margin-top: auto; // Pushes tags to the bottom
   padding-top: 15px;
 =======
   margin-top: 10px;
 >>>>>>> d46f38e (change the files for the secctiopn):src/components/container/Portfolio/Portfolio.scss
+=======
+  margin-top: auto; // Pushes tags to the bottom
+  padding-top: 15px;
+>>>>>>> 63191f6 (make new changes for the sites)
   gap: 5px;
 
   .project-tag {
@@ -197,10 +205,14 @@
     padding: 4px 8px;
     border-radius: 4px;
     transition: all 0.3s ease;
+<<<<<<< HEAD
 <<<<<<< HEAD:components/container/Portfolio/Portfolio.scss
     margin: 0;
 =======
 >>>>>>> d46f38e (change the files for the secctiopn):src/components/container/Portfolio/Portfolio.scss
+=======
+    margin: 0;
+>>>>>>> 63191f6 (make new changes for the sites)
 
     &:hover {
       background-color: #8c12f0;

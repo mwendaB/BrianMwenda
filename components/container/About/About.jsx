@@ -114,9 +114,15 @@ const About = () => {
           whileInView={{ x: [250, 0], opacity: 1 }}
           transition={{ duration: 1 }}
         >
-          <p>
-            Highly motivated Full-Stack Developer with 4+ years of experience building scalable, user-centric web applications. Proficient in modern technologies like Nextjs, Nuxtjs, React, Node.js, and Python, with a proven track record of delivering projects that improve efficiency and user satisfaction. Passionate about solving complex problems and creating innovative solutions that drive business growth. Successfully deployed 10+ products, optimized website performance by 30%, and integrated third-party APIs to enhance functionality.
-          </p>
+<p>
+  Accomplished Software Developer with 5+ years of expertise crafting scalable, user-centric applications across web and mobile platforms. Specialized in modern frontend frameworks (Next.js, Nuxt.js, React) alongside robust backend technologies (Node.js, Python). Demonstrated success integrating advanced AI solutions including DeepSeek, Gemini, and OpenAI.
+  <ul>
+    <li>Successfully deployed 15+ production-grade applications</li>
+    <li>Improved website performance metrics by 30%</li>
+    <li>Seamlessly integrated diverse third-party APIs to expand functionality</li>
+  </ul>
+  Driven by a commitment to solve complex technical challenges and develop innovative solutions that deliver measurable business impact. Combines technical excellence with a focus on creating meaningful user experiences that drive growth and efficiency.
+</p>
           {bios.map((bio) => {
             return (
               <div className="bio" key={bio.id}>
