@@ -159,7 +159,7 @@ export const workImages = [
     name: "LMS",
     category: "web",
     description: "A modern, feature-rich Learning Management System built with Next.js 14. The LMS provides a comprehensive solution for creating, managing, and delivering educational content with an intuitive user interface.",
-    link: "https://learning-liart-five.vercel.app/",
+    link: "https://lms-plum-beta.vercel.app/",
     tags: ["Nextjs", "stripe", "prisma", "clerk", "mui", "tailwindcss"],
   },
   {
