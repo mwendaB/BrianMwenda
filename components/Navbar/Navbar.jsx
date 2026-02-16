@@ -85,7 +85,7 @@ const Navbar = () => {
                   {navLinks.map((navlink,index) => {
                       return <li
                           key={index}><a
-                          href={`${navlink}`} onClick={() => setToggle(false)}>{navlink}</a></li>
+                          href={`#${navlink}`} onClick={() => setToggle(false)}>{navlink}</a></li>
                   })}
               </motion.div>
           </div>
