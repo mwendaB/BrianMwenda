@@ -135,8 +135,8 @@ const About = () => {
             );
           })}
           <motion.a
-            href={BrianMwenda}
-            download="BrianMwenda.pdf"
+      href="/BrianMwenda.pdf"
+            download
             whileHover={{ scale: 1.1 }}
             transition={{ duration: 0.3 }}
           >
