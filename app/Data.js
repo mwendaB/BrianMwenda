@@ -70,59 +70,70 @@ export const icons = [
 export const experiences = [
   {
     id: 1,
-    year: "Jan 2024 - Present",
-    position: "Senior Frontend Developer",
-    company: "Nathan & Nathan",
+    year: "Nov 2023 - Present",
+    position: "Senior Front End Engineer",
+    company: "Nathan Digital — Dubai, UAE",
     tasks: [
-      "Developed and maintained web applications using Nextjs,Reactjs and Nuxtjs",
-      "Work closely with the backend team To Implement high quality API which are dynamic.",
-      "Collaborate with the design team to give the clients Quality designs which are both interactive and dynamic",
-      "Worked closely with the QA team to identify and fix bugs early in the development process, resulting in a 98% defect-free release.",
-      "Collaborated with DevOps engineers to implement a CI/CD pipeline, reducing deployment time from days to hours."
+      "Developed a robust accounting system handling invoices, debts, multi-currency transactions, and ledger management.",
+      "Optimized front-end performance with Nuxt and TypeScript, reducing load times by 40%.",
+      "Implemented UI/UX enhancements that simplified complex financial workflows and improved user efficiency.",
+      "Promoted to Front-End Team Lead after 9 months, leading developers building scalable web applications.",
+      "Oversaw development of a CRM system with real-time analytics and automation for client management.",
+      "Led creation of a drag-and-drop website builder enabling rapid business site launches.",
+      "Established best practices in code reviews, testing strategies, and front-end architecture.",
+      "Increased organic traffic and engagement by 30% through Next.js implementation and SEO optimization.",
+      "Mentored junior developers transitioning from React to Vue 3, reinforcing core concepts and best practices."
     ],
   },
   {
     id: 2,
-    year: "2023 - Nov 2023",
-    position: "FullStack Developer",
-    company: "exhibitsolutions",
+    year: "Feb 2022 - Nov 2023",
+    position: "Software Engineer",
+    company: "Codekazi — Nairobi, Kenya",
     tasks: [
-      "Developed and maintained web applications using React.js and Node.js.",
-      "Implemented RESTful APIs to interact with the backend.",
-      "Collaborated with the design team to improve UI/UX.",
+      "Integrated RFID hardware with a patient tracking app (React/Python), reducing manual tracking time by 40%.",
+      "Built a unified messaging inbox aggregating WhatsApp, Facebook, and Instagram, cutting response time by 55%.",
+      "Integrated Facebook lead capture into CRM workflows, improving 24-hour follow-up from 62% to 89%.",
+      "Developed B2C e-commerce filtering, reducing search time from 8 minutes to 2.5 minutes and boosting conversion by 23%.",
+      "Created a dynamic room rate management feature for hospital B2B platforms, increasing revenue optimization by 18%.",
+      "Led RFID-based asset management with real-time alerts, reducing theft/loss by 35% and eliminating manual audits.",
+      "Integrated pharmacy, lab, and insurance APIs, cutting manual entry by 65% and reducing prescription time from 8 minutes to 3 minutes."
     ],
   },
   {
     id: 3,
-    year: "2022 - present",
-    position: "FullStack Developer - part-time",
-    company: "codekazi.com",
+    year: "Undated",
+    position: "Front-End Developer",
+    company: "Italanta",
     tasks: [
-      "Built and deployed responsive websites using HTML, CSS, and JavaScript.",
-      "Assisted in backend development with Express.js and MongoDB.",
-      "Provided technical support and bug fixes for existing projects.",
+      "Refactored Node.js microservices and optimized database queries to improve API response times.",
+      "Built RESTful APIs with TypeScript and Firebase Cloud Functions for async messaging workflows.",
+      "Architected server-side applications with Angular 8+ and Firebase Realtime Database for large-scale training.",
+      "Implemented real-time data synchronization between Firebase and client apps for state management.",
+      "Set up automated testing and code review workflows using Jest and Cypress.",
+      "Built PWA features with service workers and offline-first architecture."
     ],
   },
   {
     id: 4,
-    year: "2022",
-    position: "Intern Software Developer",
-    company: "Italanta.co.ke",
+    year: "Undated",
+    position: "Freelance Full Stack Engineer",
+    company: "Self-Employed | Remote",
     tasks: [
-      "Assisted senior developers in building web applications.",
-      "Gained experience in front-end technologies like React.js.",
-      "Contributed to team projects and attended code reviews.",
+      "Built Trapflix mobile app (React Native/Expo) with PHP/Laravel APIs, reaching 10k+ downloads.",
+      "Developed Trapflix web platform with React and PHP, optimizing queries and caching for 25% faster loads.",
+      "Created a warehouse management system (CodeIgniter/MySQL) with real-time inventory and barcode scanning, improving logistics by 30%.",
+      "Delivered training in HTML, CSS, and JavaScript for junior developers."
     ],
   },
   {
     id: 5,
-    year: "2021 - 2023",
-    position: "Freelance Web Developer",
-    company: "#",
+    year: "Undated",
+    position: "Open Source (OSS) Developer",
+    company: "Open Source",
     tasks: [
-      "Worked with clients to understand project requirements.",
-      "Designed and developed custom websites according to client needs.",
-      "Ensured timely delivery and handled ongoing maintenance.",
+      "Marquee (Vue): built a dynamic marquee component for Vue 3 with animation controls, performance optimizations, and TypeScript types (99 GitHub stars).",
+      "Penpot: improved frontend components and UI/UX for design collaboration features."
     ],
   },
 ];
@@ -130,7 +141,7 @@ export const experiences = [
 export const finishes = [
   {
     id: 1,
-    number: "4.5+",
+    number: "5+",
     itemName: "Years Of Experience",
   },
   {
