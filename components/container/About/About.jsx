@@ -116,11 +116,13 @@ const About = () => {
         >
 <p>
   Accomplished Software Developer with 5+ years of expertise crafting scalable, user-centric applications across web and mobile platforms. Specialized in modern frontend frameworks (Next.js, Nuxt.js, React) alongside robust backend technologies (Node.js, Python). Demonstrated success integrating advanced AI solutions including DeepSeek, Gemini, and OpenAI.
-  <ul>
-    <li>Successfully deployed 15+ production-grade applications</li>
-    <li>Improved website performance metrics by 30%</li>
-    <li>Seamlessly integrated diverse third-party APIs to expand functionality</li>
-  </ul>
+</p>
+<ul>
+  <li>Successfully deployed 15+ production-grade applications</li>
+  <li>Improved website performance metrics by 30%</li>
+  <li>Seamlessly integrated diverse third-party APIs to expand functionality</li>
+</ul>
+<p>
   Driven by a commitment to solve complex technical challenges and develop innovative solutions that deliver measurable business impact. Combines technical excellence with a focus on creating meaningful user experiences that drive growth and efficiency.
 </p>
           {bios.map((bio) => {
